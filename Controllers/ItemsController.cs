@@ -47,7 +47,7 @@ namespace MyNewCrudApp.Controllers
             var item = await _context.Items.FindAsync(id);
             if (item == null)
             {
-                return NotFound();
+                return NotFound();// a 404 not found exception should be thrown
             }
             return View(item);
         }
@@ -112,7 +112,7 @@ public async Task<IActionResult> DeleteConfirmed(int id)
     }
 
     _context.Items.Remove(item);
-    await _context.SaveChangesAsync();
+   await  _context.SaveChangesAsync();
 
     return RedirectToAction(nameof(Index));
 }
