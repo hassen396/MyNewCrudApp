@@ -1,10 +1,8 @@
-using System;
 using Microsoft.EntityFrameworkCore;
 using Crud.Models;
 using Microsoft.AspNetCore.Mvc;
 
 
-// a public class that returns a view called Create for creating a user to a database tht has id, username and password
 public class UsersController : Controller
 {
     private readonly ApplicationDbContext _context;

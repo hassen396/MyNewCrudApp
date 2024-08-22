@@ -1,8 +1,4 @@
-@*index.cstml view for index action for desplaying the users list
-    public ActionResult Index(){
-        return View(_context.Users.ToList());
-    } *@
-    @model IEnumerable<Crud.Models.User>
+ @model IEnumerable<Crud.Models.User>
 <h2><a class="btn btn-primary" href="users/Create">create user</a></h2>
     <h2>Users List</h2>
     <table class="table">

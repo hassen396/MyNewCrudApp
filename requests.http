@@ -1,0 +1,7 @@
+GET http://localhost:5000/users/create
+
+###
+POST http://localhost:5000/users/create
+Content-Type: application/x-www-form-urlencoded
+
+UserName=YourUsername&Password=YourPassword&Name=YourName&Email=YourEmail@example.com&PhoneNumber=1234567890&__RequestVerificationToken=CfDJ8FWM27fhHtRNnZu2WFG2vASy1noZiU7yoeZMjhTKvWQj60RA6DAlQ2oIR_41i33unsqMuB_6jU68irTOz1t0s6aXfQd7zEBmIqtJ6ZHCXgKVcnXdxZQmGuvvh7f0sOY7-DCEkxgKVNiAeyd_ptZmsNk

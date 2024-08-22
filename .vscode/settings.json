@@ -1,9 +1,4 @@
 {
-    "workbench.colorCustomizations": {
-        "activityBar.background": "#581227",
-        "titleBar.activeBackground": "#7B1937",
-        "titleBar.activeForeground": "#FEFBFC"
-    },
     "sqltools.connections": [
         {
             "previewLimit": 50,
