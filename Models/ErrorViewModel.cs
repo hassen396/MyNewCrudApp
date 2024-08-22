@@ -1,4 +1,4 @@
-namespace MyNewCrudApp.Models;
+namespace Crud.Models;
 
 public class ErrorViewModel
 {

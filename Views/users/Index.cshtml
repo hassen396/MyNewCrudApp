@@ -1,0 +1,34 @@
+@*index.cstml view for index action for desplaying the users list
+    public ActionResult Index(){
+        return View(_context.Users.ToList());
+    } *@
+    @model IEnumerable<Crud.Models.User>
+<h2><a class="btn btn-primary" href="users/Create">create user</a></h2>
+    <h2>Users List</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>PhoneNumber</th>
+                <th>Edit</th>
+                <th>Details</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.Id</td>
+                    <td>@user.Name</td>
+                    <td>@user.PhoneNumber</td>
+                    <td><a class="btn btn-primary" href="users/Edit/@user.Id">Edit</a></td>
+                    <td><a class="btn btn-primary" href="users/Details/@user.Id">Details</a></td>
+                    <td><a  class="btn btn-danger" href="users/Delete/@user.Id">Delete</a></td>
+
+                </tr>
+            }
+        </tbody>
+    </table>
+    

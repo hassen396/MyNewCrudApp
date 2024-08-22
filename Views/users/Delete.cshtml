@@ -1,0 +1,15 @@
+@*view  for deleting user *@
+@model Crud.Models.User
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<p>Are you sure you want to delete the user with id: @Model.Id, username: @Model.UserName?</p>
+
+<form asp-action="Delete" asp-route-id="@Model.Id">
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

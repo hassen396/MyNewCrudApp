@@ -1,0 +1,23 @@
+@* a view to display a details a bout a user*@
+@model Crud.Models.User
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>@ViewData["Title"]</h2>
+<br>
+<h3>Id: @Model.Id</h3>
+<h3>Name: @Model.Name</h3>
+<h3>Username: @Model.UserName</h3>
+<h3>Email: @Model.Email</h3>
+<h3>PhoneNumber: @Model.PhoneNumber</h3>
+<a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-primary">Edit</a>
+<a asp-action="Index" class="btn btn-secondary">Back to List</a>
+<a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Delete</a>
+
+<hr />
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
