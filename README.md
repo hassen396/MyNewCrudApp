@@ -10,6 +10,22 @@ This project is a basic CRUD (Create, Read, Update, Delete) web application buil
 - **View User Details**: See specific details of a user.
 - **Delete User**: Remove a user from the database.
 
+## Screenshots
+<div style="text-align: center;">
+    <h3>1. User List</h3>
+    <img src="screenshots/user-list.png" alt="User List" width="400"/>
+</div>
+
+<div style="text-align: center;">
+    <h3>2. Create User</h3>
+    <img src="screenshots/create-user.png" alt="Create User" width="400"/>
+</div>
+
+<div style="text-align: center;">
+    <h3>3. Edit User</h3>
+    <img src="screenshots/edit-user.png" alt="Edit User" width="400"/>
+</div>
+
 ## Getting Started
 
 ### Prerequisites
