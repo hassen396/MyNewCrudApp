@@ -60,7 +60,7 @@ This project is a basic CRUD (Create, Read, Update, Delete) web application buil
 6. Open your browser and go to ```bash http://localhost:5000 ``` to view the application.
 
 
-```
+```vbnet
 This version is more straightforward, focusing on clarity and simplicity. Let me know if there's anything else you'd like to add or adjust!
 ```
 
